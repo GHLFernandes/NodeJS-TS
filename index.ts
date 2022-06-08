@@ -7,6 +7,10 @@ const PORT = process.env.PORT || 3000;
 
 const server = createServer((req: IncomingMessage, res: ServerResponse) => {
 
+    res.end('Hello World!');
 
+});
 
+server.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}/`);
 });
